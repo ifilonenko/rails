@@ -11,6 +11,7 @@ end
 group :test do
 	gem 'selenium-webdriver', '2.39.0'
 	gem 'capybara', 					'2.2.0'
+	gem 'shoulda-matchers',		'2.4.0'
 end
 
 gem 'sass-rails', 	'4.0.1'
