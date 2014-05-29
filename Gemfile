@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-<<<<<<< HEAD
+<< HEAD
 ruby '2.1.0'
 
 gem 'rails', 	'4.0.1'
