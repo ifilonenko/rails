@@ -5,14 +5,21 @@ require "active_record/railtie"
 require "action_controller/railtie"
 require "action_mailer/railtie"
 require "sprockets/railtie"
+<<<<<<< HEAD
 
+=======
+>>>>>>> c0b2bf0e55e8bd9e6dab63089e88a0350b6e15b4
 # require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)
 
+<<<<<<< HEAD
 module Odot
+=======
+module Todo
+>>>>>>> c0b2bf0e55e8bd9e6dab63089e88a0350b6e15b4
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -25,6 +32,9 @@ module Odot
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+<<<<<<< HEAD
     I18n.enforce_available_locales = false
+=======
+>>>>>>> c0b2bf0e55e8bd9e6dab63089e88a0350b6e15b4
   end
 end

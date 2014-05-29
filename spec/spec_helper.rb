@@ -3,7 +3,10 @@ ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'rspec/autorun'
+<<<<<<< HEAD
 require 'capybara/rspec'
+=======
+>>>>>>> c0b2bf0e55e8bd9e6dab63089e88a0350b6e15b4
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
@@ -14,8 +17,11 @@ Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
 
 RSpec.configure do |config|
+<<<<<<< HEAD
   config.include TodoListHelpers, type: :feature
   config.include RailsDomIdHelper, type: :feature
+=======
+>>>>>>> c0b2bf0e55e8bd9e6dab63089e88a0350b6e15b4
   # ## Mock Framework
   #
   # If you prefer to use mocha, flexmock or RR, uncomment the appropriate line:
@@ -42,4 +48,12 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+<<<<<<< HEAD
+=======
+
+  config.include FactoryGirl::Syntax::Methods
+
+  config.include Devise::TestHelpers, :type => :controller
+  config.include JsonApiHelpers, :type => :controller
+>>>>>>> c0b2bf0e55e8bd9e6dab63089e88a0350b6e15b4
 end

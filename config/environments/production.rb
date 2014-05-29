@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Odot::Application.configure do
+=======
+Todo::Application.configure do
+>>>>>>> c0b2bf0e55e8bd9e6dab63089e88a0350b6e15b4
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -23,8 +27,13 @@ Odot::Application.configure do
   config.serve_static_assets = false
 
   # Compress JavaScripts and CSS.
+<<<<<<< HEAD
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
+=======
+  # Disable variable name manging to make AngularJS short dependency syntax work.
+  config.assets.js_compressor = Uglifier.new(mangle: false)
+>>>>>>> c0b2bf0e55e8bd9e6dab63089e88a0350b6e15b4
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
@@ -64,6 +73,10 @@ Odot::Application.configure do
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
+<<<<<<< HEAD
+=======
+  config.action_mailer.default_url_options = { :host => 'todo-rails4-angularjs.shellyapp.com' }
+>>>>>>> c0b2bf0e55e8bd9e6dab63089e88a0350b6e15b4
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found).

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Odot::Application.configure do
+=======
+Todo::Application.configure do
+>>>>>>> c0b2bf0e55e8bd9e6dab63089e88a0350b6e15b4
   # Settings specified here will take precedence over those in config/application.rb.
 
   # The test environment is used exclusively to run your application's

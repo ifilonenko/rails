@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Odot::Application.configure do
+=======
+Todo::Application.configure do
+>>>>>>> c0b2bf0e55e8bd9e6dab63089e88a0350b6e15b4
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -15,6 +19,10 @@ Odot::Application.configure do
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
+<<<<<<< HEAD
+=======
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+>>>>>>> c0b2bf0e55e8bd9e6dab63089e88a0350b6e15b4
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
