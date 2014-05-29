@@ -1,15 +1,11 @@
-<<<<<<< HEAD
-Odot::Application.configure do
-=======
-Todo::Application.configure do
->>>>>>> c0b2bf0e55e8bd9e6dab63089e88a0350b6e15b4
+Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
   config.cache_classes = true
 
   # Eager load code on boot. This eager loads most of Rails and
-  # your application in memory, allowing both thread web servers
+  # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
@@ -27,13 +23,8 @@ Todo::Application.configure do
   config.serve_static_assets = false
 
   # Compress JavaScripts and CSS.
-<<<<<<< HEAD
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
-=======
-  # Disable variable name manging to make AngularJS short dependency syntax work.
-  config.assets.js_compressor = Uglifier.new(mangle: false)
->>>>>>> c0b2bf0e55e8bd9e6dab63089e88a0350b6e15b4
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
@@ -73,13 +64,9 @@ Todo::Application.configure do
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
-<<<<<<< HEAD
-=======
-  config.action_mailer.default_url_options = { :host => 'todo-rails4-angularjs.shellyapp.com' }
->>>>>>> c0b2bf0e55e8bd9e6dab63089e88a0350b6e15b4
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
-  # the I18n.default_locale when a translation can not be found).
+  # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
 
   # Send deprecation notices to registered listeners.
@@ -90,4 +77,7 @@ Todo::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # Do not dump schema after migrations.
+  config.active_record.dump_schema_after_migration = false
 end

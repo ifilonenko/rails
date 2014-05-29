@@ -1,14 +1,4 @@
-<<<<<<< HEAD
-Odot::Application.routes.draw do
-  resources :todo_lists do
-    resources :todo_items do
-      member do
-        patch :complete
-      end
-    end
-  end
-  root 'todo_lists#index'
-
+Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -63,23 +53,4 @@ Odot::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-=======
-Todo::Application.routes.draw do
-  devise_for :users  
-
-  namespace :api, defaults: {format: :json} do
-    devise_scope :user do
-      resource :session, only: [:create, :destroy]
-    end
-    resources :task_lists, only: [:index, :create, :update, :destroy, :show] do
-      resources :tasks, only: [:index, :create, :update, :destroy]
-    end
-  end
-
-  root :to => "home#index"
-
-  get '/dashboard' => 'templates#index'
-  get '/task_lists/:id' => 'templates#index'
-  get '/templates/:path.html' => 'templates#template', :constraints => { :path => /.+/  }
->>>>>>> c0b2bf0e55e8bd9e6dab63089e88a0350b6e15b4
 end

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -14,14 +13,4 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-=======
-//= require jquery
-//= require jquery_ujs
-//= require jquery.ui.datepicker
-//= require jquery.ui.sortable
-//= require turbolinks
-//= require lib/angular.min
-//= require lib/angular-resource.min
-//= require todoApp
->>>>>>> c0b2bf0e55e8bd9e6dab63089e88a0350b6e15b4
 //= require_tree .
